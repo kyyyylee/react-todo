@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react'
 //where all the todos live
 function TodoList({ todos, setTodos }) {
   return (
-    <ol className=" w-3/5 min-h-64">
+    <ol className=" w-4/5 min-h-64">
       {todos && todos.length > 0 ? (
         todos?.map((item, index) => (
           <Item key={index} item={item} setTodos={setTodos} />
@@ -56,7 +56,7 @@ function Item({ item, setTodos }) {
     setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== item.id));
   };
   return (
-    <li id={item?.id} className="bg-orange-950 rounded-full px-8 py-4 text-xl">
+    <li id={item?.id} className="border-orange-950 border-2 rounded-md px-8 py-4 text-xl">
       {editing ? (
         <form onSubmit={handleInputSubmit}>
             <input

@@ -20,15 +20,15 @@ function Form({ setTodos }) {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className='flex items-center'>
+    <form onSubmit={handleSubmit} className='flex items-center w-4/5'>
       <input
         type="text"
         name="todo"
         id="todo"
         placeholder="next task"
-        className='px-4 py-2 border-2 mr-4 border-blue-950 rounded-xl'
+        className='w-full px-2 py-4 mr-2 rounded-md'
       />
-      <button className='bg-violet-300 p-3 rounded-full border-2 border-blue-950'>
+      <button className='bg-orange-950 p-2 text-4xl rounded-md border-2 text-white'>
         <Icon icon="tabler:plus"/>
       </button>
     </form>

@@ -8,11 +8,9 @@
     --background-end-rgb: 0, 0, 0;
 }
 
-body, input {
+body {
   background: #F1EEE8;
 }
-li{
-  color: #F1EEE8;
-}
+
 
 
